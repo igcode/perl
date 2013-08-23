@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#to connect by telnet to the routers launch the show interfaces command and catch the response
+#to connect by telnet to Cisco routers launch the show interfaces command and catch the response
 
 use Net::Telnet;
 
