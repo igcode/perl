@@ -138,7 +138,7 @@ sub _read_line {
 
 			 case "gclog"    {
 
-                		if ( ($mem_total_tmp,$mem_used_tmp) = ( $_ =~ m/^\/var\/.*\/logs\/gclog\s+\:.*concurrent mark\-sweep\s+generation\s+total\s+(\d+)K\,\s+used\s+(\d+)K\s+\[.*/ )){}
+                		if ( ($mem_total,$mem_used) = ( $_ =~ m/^\/var\/.*\/logs\/gclog\s+\:.*concurrent mark\-sweep\s+generation\s+total\s+(\d+)K\,\s+used\s+(\d+)K\s+\[.*/ )){}
 
                                                         }#case gclog
 
