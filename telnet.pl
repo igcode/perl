@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#script use to connect to Cisco Router by script and launch the show interfaces command
+#to connect by telnet to Cisco routers launch the show interfaces command and catch the response
 
 use Net::Telnet;
 
@@ -12,6 +12,8 @@ $telnet->print('userx');
 $telnet->waitfor('/assword:($|\s)/i');
 $telnet->print('xxx');
 $telnet->waitfor('/(>|#)/');
+
+#to avoid the terminal pause and get the full response of the commands
 
 $telnet->print("terminal length 0");
 $telnet->waitfor('/#/');
